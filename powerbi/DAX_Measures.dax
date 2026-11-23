@@ -1,0 +1,185 @@
+/* ====================================================================
+   PROJECT: FinGuard Digital Payment & Fraud Risk Intelligence
+   FILE: DAX_Measures.dax
+   DESCRIPTION: 30+ Production DAX Measures organized by reporting tier
+   ==================================================================== */
+
+// ==========================================
+// 1. BASE VOLUME & FINANCIAL AGGREGATIONS
+// ==========================================
+
+Total Transactions = 
+COUNTROWS('powerbi_fact_transactions')
+
+Total GMV = 
+SUM('powerbi_fact_transactions'[Amount])
+
+Total Successful GMV = 
+CALCULATE(
+    SUM('powerbi_fact_transactions'[Amount]),
+    'powerbi_fact_transactions'[IsStatusCompleted] = 1
+)
+
+Avg Transaction Value (ATV) = 
+DIVIDE([Total GMV], [Total Transactions], 0)
+
+// ==========================================
+// 2. FRAUD LOSS & INCIDENCE MEASURES
+// ==========================================
+
+Total Fraud Transactions = 
+CALCULATE(
+    COUNTROWS('powerbi_fact_transactions'),
+    'powerbi_fact_transactions'[IsFraud] = 1
+)
+
+Fraud Rate % (Count) = 
+DIVIDE([Total Fraud Transactions], [Total Transactions], 0)
+
+Total Incurred Fraud Loss = 
+SUM('powerbi_fact_transactions'[FraudLossAmount])
+
+Fraud Loss Rate % (GMV) = 
+DIVIDE([Total Incurred Fraud Loss], [Total GMV], 0)
+
+Total Prevented Fraud Loss = 
+SUM('powerbi_fact_transactions'[PreventedLossAmount])
+
+Rule Engine Prevention Efficiency % = 
+DIVIDE(
+    [Total Prevented Fraud Loss],
+    [Total Prevented Fraud Loss] + [Total Incurred Fraud Loss],
+    0
+)
+
+Total Fraud Exposure = 
+[Total Incurred Fraud Loss] + [Total Prevented Fraud Loss]
+
+Avg Fraud Ticket Size = 
+DIVIDE([Total Incurred Fraud Loss], [Total Fraud Transactions], 0)
+
+// ==========================================
+// 3. CHARGEBACK & DISPUTE METRICS
+// ==========================================
+
+Total Chargebacks = 
+CALCULATE(
+    COUNTROWS('powerbi_fact_transactions'),
+    SEARCH("Chargeback", 'powerbi_fact_transactions'[ChargebackStatus], 1, 0) > 0
+)
+
+Chargeback Rate % = 
+DIVIDE([Total Chargebacks], [Total Transactions], 0)
+
+Chargebacks Won = 
+CALCULATE(
+    COUNTROWS('powerbi_fact_transactions'),
+    'powerbi_fact_transactions'[ChargebackStatus] = "Chargeback Won"
+)
+
+Chargebacks Lost = 
+CALCULATE(
+    COUNTROWS('powerbi_fact_transactions'),
+    'powerbi_fact_transactions'[ChargebackStatus] = "Chargeback Lost"
+)
+
+Dispute Win Rate % = 
+DIVIDE([Chargebacks Won], [Chargebacks Won] + [Chargebacks Lost], 0)
+
+// ==========================================
+// 4. RISK SCORING & ANOMALY SEGMENTS
+// ==========================================
+
+Avg Risk Score = 
+AVERAGE('powerbi_fact_transactions'[RiskScore])
+
+High Risk Transactions = 
+CALCULATE(
+    COUNTROWS('powerbi_fact_transactions'),
+    'powerbi_fact_transactions'[RiskBand] = "High (70-100)"
+)
+
+High Risk Volume Pct = 
+DIVIDE([High Risk Transactions], [Total Transactions], 0)
+
+VPN / Proxy Attack Count = 
+CALCULATE(
+    COUNTROWS('powerbi_fact_transactions'),
+    'powerbi_fact_transactions'[IsVPNorProxy] = 1
+)
+
+VPN Attack Rate % = 
+DIVIDE([VPN / Proxy Attack Count], [Total Transactions], 0)
+
+Night Window Transactions = 
+CALCULATE(
+    COUNTROWS('powerbi_fact_transactions'),
+    'powerbi_fact_transactions'[TransactionHour] IN {0, 1, 2, 3, 4}
+)
+
+Night Window Fraud Loss = 
+CALCULATE(
+    [Total Incurred Fraud Loss],
+    'powerbi_fact_transactions'[TransactionHour] IN {0, 1, 2, 3, 4}
+)
+
+// ==========================================
+// 5. MERCHANT GOVERNANCE & COMPLIANCE
+// ==========================================
+
+Active Merchants Count = 
+DISTINCTCOUNT('powerbi_fact_transactions'[MerchantID])
+
+Merchants Breaching 1% Limit = 
+COUNTROWS(
+    FILTER(
+        VALUES('powerbi_dim_merchants'[MerchantID]),
+        [Chargeback Rate %] >= 0.010
+    )
+)
+
+Merchant Penalty Escrow Value = 
+CALCULATE(
+    [Total GMV] * 0.05,
+    FILTER(
+        VALUES('powerbi_dim_merchants'[MerchantID]),
+        [Chargeback Rate %] >= 0.010
+    )
+)
+
+// ==========================================
+// 6. TIME INTELLIGENCE & MOVING AVERAGES
+// ==========================================
+
+Fraud Loss MTD = 
+TOTALMTD([Total Incurred Fraud Loss], 'powerbi_dim_date'[Date])
+
+Fraud Loss QTD = 
+TOTALQTD([Total Incurred Fraud Loss], 'powerbi_dim_date'[Date])
+
+Fraud Loss YTD = 
+TOTALYTD([Total Incurred Fraud Loss], 'powerbi_dim_date'[Date])
+
+Fraud Loss Previous Month = 
+CALCULATE(
+    [Total Incurred Fraud Loss],
+    DATEADD('powerbi_dim_date'[Date], -1, MONTH)
+)
+
+MoM Fraud Loss Growth % = 
+DIVIDE(
+    [Total Incurred Fraud Loss] - [Fraud Loss Previous Month],
+    [Fraud Loss Previous Month],
+    0
+)
+
+30-Day Moving Avg Fraud Loss = 
+AVERAGEX(
+    DATESINPERIOD(
+        'powerbi_dim_date'[Date],
+        LASTDATE('powerbi_dim_date'[Date]),
+        -30,
+        DAY
+    ),
+    [Total Incurred Fraud Loss]
+)

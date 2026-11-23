@@ -1,0 +1,151 @@
+MerchantID,MerchantName,MerchantCategory,RiskTier,BaseFraudRate,SettlementPeriodDays,ChargebackThresholdPct
+MERCH-5001,Healthcare-Pay-01,Healthcare & Pharmacy,Low,0.005,3,1.0
+MERCH-5002,Travel-Global-02,Travel & Airlines,Medium,0.035,3,1.0
+MERCH-5003,Electronics-Global-03,Electronics & Gadgets,Medium-High,0.05,1,1.0
+MERCH-5004,E-Commerce-Zone-04,E-Commerce Retail,Low,0.015,2,1.0
+MERCH-5005,Financial-Zone-05,Financial & Lending,Medium-High,0.045,7,1.0
+MERCH-5006,Subscription-Global-06,Subscription Services,Medium,0.025,1,1.0
+MERCH-5007,Electronics-Hub-07,Electronics & Gadgets,Medium-High,0.05,3,1.0
+MERCH-5008,Luxury-Global-08,Luxury & Jewelry,High,0.07,1,1.0
+MERCH-5009,Luxury-Hub-09,Luxury & Jewelry,High,0.07,7,1.0
+MERCH-5010,Cryptocurrency-Hub-10,Cryptocurrency Exchange,Critical,0.11,3,1.0
+MERCH-5011,Subscription-Pay-11,Subscription Services,Medium,0.025,2,1.0
+MERCH-5012,Subscription-Mart-12,Subscription Services,Medium,0.025,3,1.0
+MERCH-5013,Financial-Global-13,Financial & Lending,Medium-High,0.045,7,1.0
+MERCH-5014,Digital-Zone-14,Digital Goods & Gaming,High,0.065,2,1.0
+MERCH-5015,Food-Mart-15,Food & Grocery,Low,0.008,2,1.0
+MERCH-5016,Subscription-Global-16,Subscription Services,Medium,0.025,7,1.0
+MERCH-5017,E-Commerce-Hub-17,E-Commerce Retail,Low,0.015,7,1.0
+MERCH-5018,Financial-Direct-18,Financial & Lending,Medium-High,0.045,2,1.0
+MERCH-5019,E-Commerce-Hub-19,E-Commerce Retail,Low,0.015,7,1.0
+MERCH-5020,Electronics-Direct-20,Electronics & Gadgets,Medium-High,0.05,7,1.0
+MERCH-5021,Food-Zone-21,Food & Grocery,Low,0.008,3,1.0
+MERCH-5022,E-Commerce-Mart-22,E-Commerce Retail,Low,0.015,1,1.0
+MERCH-5023,Electronics-Pay-23,Electronics & Gadgets,Medium-High,0.05,7,1.0
+MERCH-5024,Digital-Mart-24,Digital Goods & Gaming,High,0.065,3,1.0
+MERCH-5025,Healthcare-Zone-25,Healthcare & Pharmacy,Low,0.005,3,1.0
+MERCH-5026,Food-Direct-26,Food & Grocery,Low,0.008,7,1.0
+MERCH-5027,Electronics-Zone-27,Electronics & Gadgets,Medium-High,0.05,3,1.0
+MERCH-5028,Food-Zone-28,Food & Grocery,Low,0.008,7,1.0
+MERCH-5029,Financial-Express-29,Financial & Lending,Medium-High,0.045,1,1.0
+MERCH-5030,Travel-Hub-30,Travel & Airlines,Medium,0.035,7,1.0
+MERCH-5031,E-Commerce-Hub-31,E-Commerce Retail,Low,0.015,2,1.0
+MERCH-5032,Healthcare-Prime-32,Healthcare & Pharmacy,Low,0.005,7,1.0
+MERCH-5033,Subscription-Pay-33,Subscription Services,Medium,0.025,1,1.0
+MERCH-5034,Subscription-Hub-34,Subscription Services,Medium,0.025,7,1.0
+MERCH-5035,Digital-Express-35,Digital Goods & Gaming,High,0.065,7,1.0
+MERCH-5036,Financial-Express-36,Financial & Lending,Medium-High,0.045,7,1.0
+MERCH-5037,Travel-Hub-37,Travel & Airlines,Medium,0.035,1,1.0
+MERCH-5038,Luxury-Express-38,Luxury & Jewelry,High,0.07,2,1.0
+MERCH-5039,Luxury-Hub-39,Luxury & Jewelry,High,0.07,2,1.0
+MERCH-5040,E-Commerce-Direct-40,E-Commerce Retail,Low,0.015,3,1.0
+MERCH-5041,Cryptocurrency-Pay-41,Cryptocurrency Exchange,Critical,0.11,3,1.0
+MERCH-5042,Cryptocurrency-Zone-42,Cryptocurrency Exchange,Critical,0.11,7,1.0
+MERCH-5043,Food-Hub-43,Food & Grocery,Low,0.008,3,1.0
+MERCH-5044,Luxury-Zone-44,Luxury & Jewelry,High,0.07,1,1.0
+MERCH-5045,Cryptocurrency-Global-45,Cryptocurrency Exchange,Critical,0.11,1,1.0
+MERCH-5046,Electronics-Prime-46,Electronics & Gadgets,Medium-High,0.05,2,1.0
+MERCH-5047,Subscription-Zone-47,Subscription Services,Medium,0.025,2,1.0
+MERCH-5048,Digital-Mart-48,Digital Goods & Gaming,High,0.065,1,1.0
+MERCH-5049,Travel-Direct-49,Travel & Airlines,Medium,0.035,2,1.0
+MERCH-5050,Subscription-Direct-50,Subscription Services,Medium,0.025,2,1.0
+MERCH-5051,E-Commerce-Direct-51,E-Commerce Retail,Low,0.015,7,1.0
+MERCH-5052,E-Commerce-Global-52,E-Commerce Retail,Low,0.015,1,1.0
+MERCH-5053,Food-Global-53,Food & Grocery,Low,0.008,7,1.0
+MERCH-5054,Electronics-Pay-54,Electronics & Gadgets,Medium-High,0.05,7,1.0
+MERCH-5055,Luxury-Express-55,Luxury & Jewelry,High,0.07,1,1.0
+MERCH-5056,Cryptocurrency-Hub-56,Cryptocurrency Exchange,Critical,0.11,3,1.0
+MERCH-5057,Healthcare-Prime-57,Healthcare & Pharmacy,Low,0.005,3,1.0
+MERCH-5058,E-Commerce-Global-58,E-Commerce Retail,Low,0.015,2,1.0
+MERCH-5059,Food-Pay-59,Food & Grocery,Low,0.008,1,1.0
+MERCH-5060,Cryptocurrency-Global-60,Cryptocurrency Exchange,Critical,0.11,1,1.0
+MERCH-5061,Cryptocurrency-Zone-61,Cryptocurrency Exchange,Critical,0.11,2,1.0
+MERCH-5062,Food-Direct-62,Food & Grocery,Low,0.008,1,1.0
+MERCH-5063,Digital-Hub-63,Digital Goods & Gaming,High,0.065,7,1.0
+MERCH-5064,Healthcare-Hub-64,Healthcare & Pharmacy,Low,0.005,3,1.0
+MERCH-5065,Electronics-Zone-65,Electronics & Gadgets,Medium-High,0.05,1,1.0
+MERCH-5066,Luxury-Zone-66,Luxury & Jewelry,High,0.07,3,1.0
+MERCH-5067,E-Commerce-Express-67,E-Commerce Retail,Low,0.015,2,1.0
+MERCH-5068,Digital-Prime-68,Digital Goods & Gaming,High,0.065,1,1.0
+MERCH-5069,Luxury-Pay-69,Luxury & Jewelry,High,0.07,1,1.0
+MERCH-5070,E-Commerce-Hub-70,E-Commerce Retail,Low,0.015,7,1.0
+MERCH-5071,Food-Pay-71,Food & Grocery,Low,0.008,2,1.0
+MERCH-5072,E-Commerce-Prime-72,E-Commerce Retail,Low,0.015,1,1.0
+MERCH-5073,Electronics-Global-73,Electronics & Gadgets,Medium-High,0.05,1,1.0
+MERCH-5074,Digital-Hub-74,Digital Goods & Gaming,High,0.065,1,1.0
+MERCH-5075,Electronics-Global-75,Electronics & Gadgets,Medium-High,0.05,7,1.0
+MERCH-5076,Digital-Global-76,Digital Goods & Gaming,High,0.065,2,1.0
+MERCH-5077,Financial-Hub-77,Financial & Lending,Medium-High,0.045,7,1.0
+MERCH-5078,Healthcare-Prime-78,Healthcare & Pharmacy,Low,0.005,7,1.0
+MERCH-5079,Financial-Pay-79,Financial & Lending,Medium-High,0.045,3,1.0
+MERCH-5080,E-Commerce-Prime-80,E-Commerce Retail,Low,0.015,3,1.0
+MERCH-5081,Financial-Zone-81,Financial & Lending,Medium-High,0.045,1,1.0
+MERCH-5082,Digital-Hub-82,Digital Goods & Gaming,High,0.065,1,1.0
+MERCH-5083,Financial-Zone-83,Financial & Lending,Medium-High,0.045,2,1.0
+MERCH-5084,Subscription-Direct-84,Subscription Services,Medium,0.025,3,1.0
+MERCH-5085,Healthcare-Prime-85,Healthcare & Pharmacy,Low,0.005,7,1.0
+MERCH-5086,Travel-Zone-86,Travel & Airlines,Medium,0.035,2,1.0
+MERCH-5087,E-Commerce-Hub-87,E-Commerce Retail,Low,0.015,2,1.0
+MERCH-5088,Electronics-Global-88,Electronics & Gadgets,Medium-High,0.05,3,1.0
+MERCH-5089,Electronics-Mart-89,Electronics & Gadgets,Medium-High,0.05,2,1.0
+MERCH-5090,Luxury-Direct-90,Luxury & Jewelry,High,0.07,3,1.0
+MERCH-5091,Electronics-Express-91,Electronics & Gadgets,Medium-High,0.05,1,1.0
+MERCH-5092,Subscription-Mart-92,Subscription Services,Medium,0.025,1,1.0
+MERCH-5093,Cryptocurrency-Hub-93,Cryptocurrency Exchange,Critical,0.11,7,1.0
+MERCH-5094,Food-Zone-94,Food & Grocery,Low,0.008,2,1.0
+MERCH-5095,Cryptocurrency-Pay-95,Cryptocurrency Exchange,Critical,0.11,3,1.0
+MERCH-5096,Cryptocurrency-Prime-96,Cryptocurrency Exchange,Critical,0.11,7,1.0
+MERCH-5097,Financial-Express-97,Financial & Lending,Medium-High,0.045,3,1.0
+MERCH-5098,Financial-Direct-98,Financial & Lending,Medium-High,0.045,7,1.0
+MERCH-5099,Food-Mart-99,Food & Grocery,Low,0.008,1,1.0
+MERCH-5100,Luxury-Hub-00,Luxury & Jewelry,High,0.07,7,1.0
+MERCH-5101,Cryptocurrency-Hub-01,Cryptocurrency Exchange,Critical,0.11,2,1.0
+MERCH-5102,Cryptocurrency-Prime-02,Cryptocurrency Exchange,Critical,0.11,2,1.0
+MERCH-5103,Cryptocurrency-Prime-03,Cryptocurrency Exchange,Critical,0.11,3,1.0
+MERCH-5104,Healthcare-Zone-04,Healthcare & Pharmacy,Low,0.005,7,1.0
+MERCH-5105,Travel-Hub-05,Travel & Airlines,Medium,0.035,3,1.0
+MERCH-5106,E-Commerce-Pay-06,E-Commerce Retail,Low,0.015,3,1.0
+MERCH-5107,E-Commerce-Pay-07,E-Commerce Retail,Low,0.015,2,1.0
+MERCH-5108,Electronics-Prime-08,Electronics & Gadgets,Medium-High,0.05,2,1.0
+MERCH-5109,Financial-Express-09,Financial & Lending,Medium-High,0.045,1,1.0
+MERCH-5110,E-Commerce-Zone-10,E-Commerce Retail,Low,0.015,2,1.0
+MERCH-5111,Electronics-Mart-11,Electronics & Gadgets,Medium-High,0.05,2,1.0
+MERCH-5112,Electronics-Mart-12,Electronics & Gadgets,Medium-High,0.05,3,1.0
+MERCH-5113,Subscription-Zone-13,Subscription Services,Medium,0.025,2,1.0
+MERCH-5114,Cryptocurrency-Hub-14,Cryptocurrency Exchange,Critical,0.11,2,1.0
+MERCH-5115,Electronics-Pay-15,Electronics & Gadgets,Medium-High,0.05,1,1.0
+MERCH-5116,Travel-Global-16,Travel & Airlines,Medium,0.035,1,1.0
+MERCH-5117,Food-Zone-17,Food & Grocery,Low,0.008,3,1.0
+MERCH-5118,Luxury-Zone-18,Luxury & Jewelry,High,0.07,3,1.0
+MERCH-5119,Food-Mart-19,Food & Grocery,Low,0.008,7,1.0
+MERCH-5120,Digital-Pay-20,Digital Goods & Gaming,High,0.065,2,1.0
+MERCH-5121,Travel-Zone-21,Travel & Airlines,Medium,0.035,2,1.0
+MERCH-5122,Subscription-Global-22,Subscription Services,Medium,0.025,3,1.0
+MERCH-5123,Food-Global-23,Food & Grocery,Low,0.008,2,1.0
+MERCH-5124,E-Commerce-Zone-24,E-Commerce Retail,Low,0.015,3,1.0
+MERCH-5125,Travel-Express-25,Travel & Airlines,Medium,0.035,2,1.0
+MERCH-5126,E-Commerce-Direct-26,E-Commerce Retail,Low,0.015,2,1.0
+MERCH-5127,Subscription-Prime-27,Subscription Services,Medium,0.025,2,1.0
+MERCH-5128,Digital-Prime-28,Digital Goods & Gaming,High,0.065,1,1.0
+MERCH-5129,Travel-Global-29,Travel & Airlines,Medium,0.035,3,1.0
+MERCH-5130,Luxury-Prime-30,Luxury & Jewelry,High,0.07,2,1.0
+MERCH-5131,Food-Express-31,Food & Grocery,Low,0.008,7,1.0
+MERCH-5132,Luxury-Prime-32,Luxury & Jewelry,High,0.07,3,1.0
+MERCH-5133,Financial-Global-33,Financial & Lending,Medium-High,0.045,1,1.0
+MERCH-5134,Cryptocurrency-Zone-34,Cryptocurrency Exchange,Critical,0.11,2,1.0
+MERCH-5135,Luxury-Zone-35,Luxury & Jewelry,High,0.07,7,1.0
+MERCH-5136,Cryptocurrency-Direct-36,Cryptocurrency Exchange,Critical,0.11,7,1.0
+MERCH-5137,Healthcare-Mart-37,Healthcare & Pharmacy,Low,0.005,3,1.0
+MERCH-5138,Electronics-Pay-38,Electronics & Gadgets,Medium-High,0.05,2,1.0
+MERCH-5139,Digital-Direct-39,Digital Goods & Gaming,High,0.065,7,1.0
+MERCH-5140,Subscription-Express-40,Subscription Services,Medium,0.025,2,1.0
+MERCH-5141,Financial-Hub-41,Financial & Lending,Medium-High,0.045,7,1.0
+MERCH-5142,Subscription-Express-42,Subscription Services,Medium,0.025,7,1.0
+MERCH-5143,Luxury-Prime-43,Luxury & Jewelry,High,0.07,7,1.0
+MERCH-5144,Healthcare-Express-44,Healthcare & Pharmacy,Low,0.005,7,1.0
+MERCH-5145,Food-Direct-45,Food & Grocery,Low,0.008,7,1.0
+MERCH-5146,E-Commerce-Mart-46,E-Commerce Retail,Low,0.015,7,1.0
+MERCH-5147,Cryptocurrency-Direct-47,Cryptocurrency Exchange,Critical,0.11,1,1.0
+MERCH-5148,Food-Pay-48,Food & Grocery,Low,0.008,3,1.0
+MERCH-5149,Subscription-Pay-49,Subscription Services,Medium,0.025,3,1.0
+MERCH-5150,Cryptocurrency-Pay-50,Cryptocurrency Exchange,Critical,0.11,1,1.0
