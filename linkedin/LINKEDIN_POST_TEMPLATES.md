@@ -34,7 +34,7 @@ Here is what the data uncovered across 45,000+ simulated payment transactions:
 3. Transaction Anomaly & Rule Engine Investigation Deck
 
 Check out the full repository and interactive code on GitHub:
-🔗 [Insert Your GitHub Repository Link Here]
+🔗 https://github.com/dwarak6/digital-payment-fraud-analytics
 
 I’d love to hear feedback from fraud analysts, risk professionals, and data leaders! How does your team balance fraud prevention with user checkout friction?
 

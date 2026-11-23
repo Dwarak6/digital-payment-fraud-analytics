@@ -114,7 +114,7 @@ digital-payment-fraud-analytics/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/digital-payment-fraud-analytics.git
+git clone https://github.com/dwarak6/digital-payment-fraud-analytics.git
 cd digital-payment-fraud-analytics
 ```
 
@@ -163,6 +163,5 @@ Financial ROI & Cost Matrix:
 
 Developed by an aspiring Data Analyst passionate about Risk Analytics, Fintech, and Business Intelligence.
 
-- **LinkedIn**: [Your LinkedIn Profile URL](https://linkedin.com)
-- **GitHub**: [Your GitHub Profile URL](https://github.com)
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
+- **GitHub**: [dwarak6](https://github.com/dwarak6)
+- **Repository**: [digital-payment-fraud-analytics](https://github.com/dwarak6/digital-payment-fraud-analytics)
