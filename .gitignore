@@ -16,3 +16,6 @@ Thumbs.db
 # Power BI temp files
 *.pbix.temp
 *.pbit.temp
+
+# Local notes
+linkedin/

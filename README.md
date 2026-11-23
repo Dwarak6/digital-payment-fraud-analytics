@@ -100,10 +100,7 @@ digital-payment-fraud-analytics/
 │   ├── fraud_risk_scoring.py        # ML risk classification & cost-matrix ROI
 │   └── generate_dashboard_visuals.py# Renders high-res dashboard mockup images
 ├── images/                          # Visual assets for GitHub & LinkedIn
-├── linkedin/
-│   ├── LINKEDIN_POST_TEMPLATES.md   # 3 high-converting post templates
-│   ├── CAROUSEL_SLIDES_CONTENT.md   # 7-slide PDF carousel script for Canva
-│   └── PROFILE_SHOWCASE_GUIDE.md    # Resume bullets & interview talking points
+├── docs/                            # Executive Report & Carousel PDF presentations
 ├── requirements.txt                 # Python dependencies
 └── README.md
 ```
